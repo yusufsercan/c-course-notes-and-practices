@@ -1,6 +1,6 @@
 # 📁 01-Basics
 
-This folder contains foundational C++ practice codes including basic I/O operations, conditional logic, functions, and algorithms.
+This folder contains my practice programs and solutions focused on the fundamental concepts of C programming language.
 
 ---
 
