@@ -15,3 +15,4 @@ This folder contains my practice programs and solutions focused on the fundament
 * **`07_security_login_system.c`** : A basic example of controlled login using the strcmp function.
 * **`08_preprocessor_directives_and_macros.c`** : An example explaining preprocessor directives and illustrating them at a basic level.
 * **`09_pattern_printing_loops.c`** : A fundamental yet highly educational pattern printing example designed to master nested `for` loop mechanics, variable lifecycles (`i++` vs. `j++`), and step-by-step execution timing.
+* **`10_diamond_pattern_loops.c`** : Advanced pattern printing algorithm demonstrating complex nested loop symmetry, decremental loop bounds, and space-star alignment mechanics.
