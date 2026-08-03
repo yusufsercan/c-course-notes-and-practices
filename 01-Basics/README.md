@@ -13,3 +13,4 @@ This folder contains my practice programs and solutions focused on the fundament
 * **`05_switch_product_sales.c`** : Calculates cumulative product sales up to a selected day using intentional `switch-case` fall-through mechanics.
 * **`06_find_prime_numbers.c`** : A basic example of finding prime numbers using nested for loops.
 * **`07_security_login_system.c`** : A basic example of controlled login using the strcmp function.
+* **`08_preprocessor_directives_and_macros.c`** : An example explaining preprocessor directives and illustrating them at a basic level.
