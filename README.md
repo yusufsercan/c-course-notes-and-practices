@@ -9,8 +9,8 @@ This repository contains C programming code examples, core memory concepts, data
 ## 📁 Repository Structure
 
 * **01-Basics:** Fundamental I/O operations (`printf` / `scanf`), data types, operators, conditional statements, control flow loops (`for`, `while`, `do-while`), and basic mathematical calculations.
-* **02-Arrays-and-Pointers:** Array manipulation, memory addresses, pointer arithmetic, and string handling.
-* **03-Functions-and-Memory:** Function prototypes, pass-by-value vs pass-by-reference, scope, and dynamic memory allocation (`malloc`, `calloc`, `free`).
+* **02-Arrays-and-Functions**: Array manipulation, multi-dimensional arrays, function prototypes, and passing arrays to functions.
+* **03-Pointers-and-Memory**: Memory addresses, pointer arithmetic, pass-by-reference, and dynamic memory allocation (`malloc`, `calloc`, `free`).
 * **04-Structures-and-Files:** `struct`, `union`, `typedef` declarations, and file handling operations (`fopen`, `fread`, `fwrite`).
 * **05-Mini-Projects:** Console-based mini applications combining multiple core C programming concepts.
 
