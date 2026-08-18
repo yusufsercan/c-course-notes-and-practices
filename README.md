@@ -12,7 +12,6 @@ This repository contains C programming code examples, core memory concepts, data
 * **02-Arrays-and-Functions**: Array manipulation, multi-dimensional arrays, function prototypes, and passing arrays to functions.
 * **03-Pointers-and-Memory**: Memory addresses, pointer arithmetic, pass-by-reference, and dynamic memory allocation (`malloc`, `calloc`, `free`).
 * **04-Structures-and-Files:** `struct`, `union`, `typedef` declarations, and file handling operations (`fopen`, `fread`, `fwrite`).
-* **05-Mini-Projects:** Console-based mini applications combining multiple core C programming concepts.
 
 ---
 
