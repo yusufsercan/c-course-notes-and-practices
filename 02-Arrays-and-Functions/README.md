@@ -6,4 +6,4 @@ This folder contains my practice implementations and technical exercises focused
 
 ## 📜 Files & Descriptions
 
-* **`01_basic_functions.c`** : Demonstrates fundamental function definitions, void parameter safety, pass-by-value behavior, and const-correctness for string literals.
+* **`01_basic_functions.c`** : Demonstrates basic function definitions, passing multiple arguments (strings and integers), and formatted console output.
