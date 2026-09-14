@@ -10,6 +10,8 @@ int main(void)
     int myNumbers[] = {1, 2, 3, 4, 5, 6};
     
     // Eleman sayısını dinamik hesaplama standardı:
+    //sizeof(myNumbers) (Toplam Boyut): Belleğe gider ve tüm dizinin kapladığı alanı ölçer. 6 adet int yan yana durduğu için: 6 * sizeof(int) = 6 * 4 = 24 byte
+    //sizeof(myNumbers[0]) (Tek Eleman Boyutu): Dizinin ilk elemanının boyutunu ölçer. 1 adet int için: sizeof(int) = 4 byte
     int size = sizeof(myNumbers) / sizeof(myNumbers[0]);
 
     // Fonksiyona hem dizinin başlangıç adresini hem de boyutunu teslim ediyoruz:
