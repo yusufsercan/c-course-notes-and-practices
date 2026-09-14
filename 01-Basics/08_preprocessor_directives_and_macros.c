@@ -32,6 +32,7 @@ int main() {
     printf("==================================================\n");
     printf("     C ON ISLEMCI KOMUTLARI & MAKRO ORNEGI       \n");
     printf("==================================================\n\n");
+    printf("Program basladi. Sabitler ve makrolar kullaniliyor...\n\n");
 
     // --- A. Sabit ve Makro Kullanımı ---
     printf("[1] SABIT VE MAKRO KULLANIMI:\n");
@@ -49,7 +50,7 @@ int main() {
 
     #ifndef RELEASE
         // RELEASE tanımlı OLMADIĞI için bu blok çalışır.
-        printf(" -> [DURUM]: Program henuz canli yayin (Release) modunda degil.\n");
+        printf(" -> [DURUM]: Program henuz canli yayin (Release) modunda degil.\n");   
     #endif
 
     printf("\nProgram basariyla tamamlandi.\n");
