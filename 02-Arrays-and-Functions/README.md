@@ -10,3 +10,4 @@ This folder contains my practice implementations and technical exercises focused
 * **`02_basic_functions_and_arrays.c`** : Demonstrates passing arrays to functions, function return values, and memory boundary safety using dynamic array sizing.
 * **`03_recursion_functions.c`** : Code demonstrating basic recursive functions by summing numbers through self-calls.
 * **`04_exponentiation_funtion.c`** :  In this code, we demonstrated how to perform positive and negative exponentiation using basic-level knowledge of functions.
+* **`05_math_operations_functions.c`** : A program that performs certain mathematical operations using basic-level functions and creates a custom library.
