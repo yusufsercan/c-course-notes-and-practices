@@ -12,3 +12,4 @@ This folder contains my practice implementations and technical exercises focused
 * **`04_exponentiation_funtion.c`** :  In this code, we demonstrated how to perform positive and negative exponentiation using basic-level knowledge of functions.
 * **`05_math_operations_functions.c`** : A program that performs certain mathematical operations using basic-level functions and creates a custom library.
 * **`06_local_and_global_variables.c`** : An example explaining how global and local variables work at a basic level.
+* **`07_number_to_words_converter.c`** : Extracts digits from a 4-digit integer using modulo and division arithmetic, translating them into Turkish words with modular functions.
