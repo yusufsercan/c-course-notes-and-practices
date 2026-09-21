@@ -4,26 +4,68 @@
 
 /* ==============================================================================
  * 08_math_library_essentials.c
- * Standart C Matematik Kütüphanesi (<math.h>) Çekirdek Mekanizmaları
+ * Standart C Matematik Kütüphanesi (<math.h>) Çekirdek Mekanizmaları ve Sözlüğü
  * ==============================================================================
- * KRİTİK MÜHENDİSLİK NOTLARI:
- * 1. TİP DİSİPLİNİ:
- *    - <math.h> fonksiyonları kural olarak 'double' parametre alır ve 'double' döndürür.
- *    - Bir 'int' yollarsan derleyici örtük olarak (implicit cast) 'double'a yükseltir.
- *    - Ekrana basarken '%d' değil, mutlaka '%f', '%.2f' veya '%lf' kullanılmalıdır.
+ * 
+ * ------------------------------------------------------------------------------
+ * 1. FONKSİYON SÖZLÜĞÜ (NE İŞE YARARLAR?):
+ * ------------------------------------------------------------------------------
+ * • abs(x)   [<stdlib.h>] : TAMSAYI (int) mutlak değerini alır. 
+ *                          Negatif sayıyı pozitife çevirir. (|x|)
+ *                          Örn: abs(-5) -> 5
  *
- * 2. abs() vs fabs() TUZAĞI:
- *    - abs()   -> <stdlib.h> içindedir, SADECE tamsayılar (int) içindir.
- *    - fabs()  -> <math.h> içindedir, ondalıklı sayılar (double/float) içindir.
- *    - fabs(-4.7) yerine abs(-4.7) yazarsan sayı 4'e kırpılır (hassasiyet kaybı).
+ * • fabs(x)  [<math.h>]   : ONDALIKLI (double/float) mutlak değerini alır.
+ *                          Fark veya hata toleransı hesaplarında (epsilon) kullanılır.
+ *                          Örn: fabs(-4.75) -> 4.75
  *
- * 3. ONDALIKLI MOD (%) İMKÂNSIZLIĞI:
- *    - C dilinde '%' operatörü ondalıklı sayılarda (float/double) DERLENMEZ.
- *    - Ondalıklı mod hesabı için fmod(x, y) fonksiyonu şarttır.
+ * • pow(x, y)             : Üs alma fonksiyonudur (x^y). 
+ *                          x taban, y üstür. Fizik, faiz veya geometri hesaplarında kullanılır.
+ *                          Örn: pow(2.0, 8.0) -> 256.00
  *
- * 4. LİNKER (BAĞLAYICI) BAYRAĞI (-lm):
- *    - Linux / GCC ortamında derlerken sadece #include <math.h> yetmez.
- *    - Derleme komutunun sonuna matematik kütüphanesini bağlayan bayrak eklenmelidir:
+ * • sqrt(x)               : Karekök alır (√x). Hipotenüs veya mesafe hesaplarında temeldir.
+ *                          Kural: x negatif olamaz; olursa 'NaN' (Not a Number) döner.
+ *                          Örn: sqrt(49.0) -> 7.00
+ *
+ * • cbrt(x)               : Küpkök alır (∛x). Hacimden kenar uzunluğu bulurken kullanılır.
+ *                          sqrt'nin aksine negatif sayıların da küpkökünü hesaplayabilir.
+ *                          Örn: cbrt(-27.0) -> -3.00
+ *
+ * • fmod(x, y)            : Ondalıklı sayılarda mod alma (kalan bulma) işlemidir.
+ *                          C'de '%' operatörü float/double için çalışmadığından zorunludur.
+ *                          Örn: fmod(7.3, 2.0) -> 1.30  (7.3 = 2.0 * 3 + 1.3)
+ *
+ * • ceil(x)  (Ceiling)    : TAVANA YUVARLAMA yapar. Sayıyı kendisinden büyük ilk tam sayıya 
+ *                          (daima +sonsuz yönüne) çeker. Paketleme/sayfalama (pagination) 
+ *                          hesaplarında (örn: 21 ürün, 5'li kutulara 5 kutu gerekir) kullanılır.
+ *                          Örn: ceil(4.1) -> 5.0  |  ceil(-4.8) -> -4.0
+ *
+ * • floor(x) (Floor)      : TABANA YUVARLAMA yapar. Sayıyı kendisinden küçük ilk tam sayıya 
+ *                          (daima -sonsuz yönüne) çeker. Oyun ızgara (grid) koordinatlarında kullanılır.
+ *                          Örn: floor(4.9) -> 4.0  |  floor(-4.2) -> -5.0
+ *
+ * • round(x)              : EN YAKIN TAM SAYIYA yuvarlar. Standart bakkal/matematik yuvarlamasıdır.
+ *                          Virgülden sonrası 0.5 ve üzeri ise yukarı, altı ise aşağı yuvarlar.
+ *                          Örn: round(4.4) -> 4.0  |  round(4.5) -> 5.0
+ *
+ * • trunc(x) (Truncate)   : KESME/KIRPMA yapar. Virgülden sonrasını makasla kesip atar, 
+ *                          sayıyı sıfıra doğru çeker. floor'dan farkı negatif sayılarda ortaya çıkar.
+ *                          Örn: trunc(4.9) -> 4.0  |  trunc(-4.9) -> -4.0
+ *
+ * ------------------------------------------------------------------------------
+ * 2. KRİTİK MÜHENDİSLİK NOTLARI VE DERLEYİCİ TUZAKLARI:
+ * ------------------------------------------------------------------------------
+ * 1. TİP UYUMU (TYPE COERCION):
+ *    - <math.h> fonksiyonları istisnasız 'double' ile çalışır ve geriye 'double' döner.
+ *    - Bu fonksiyonların sonuçlarını ekrana basarken asla '%d' kullanma; derleyici çöp 
+ *      değer basar. Her zaman '%f', '%.2f' veya '%lf' kullan.
+ *
+ * 2. abs() vs fabs() TUZAĞI (SESSİZ HATA):
+ *    - Eğer ondalıklı bir sayıda 'fabs()' yerine 'abs()' yazarsan kod derlenir ancak 
+ *      sayı 'int'e kırpılır (cast edilir) ve virgülden sonrası kaybolur (Hassasiyet kaybı).
+ *
+ * 3. LİNKER (BAĞLAYICI) BAYRAĞI (-lm):
+ *    - Linux ve GCC ortamında matematik kütüphanesi çekirdekten ayrı bir dosyada tutulur.
+ *    - Derlerken komutun sonuna mutlaka '-lm' (link math library) bayrağı eklenmelidir:
  *      gcc 08_math_library_essentials.c -lm -o app
  * ==============================================================================
  */
