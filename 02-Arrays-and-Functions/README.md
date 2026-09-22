@@ -15,4 +15,4 @@ This folder contains my practice implementations and technical exercises focused
 * **`07_number_to_words_converter.c`** : Extracts digits from a 4-digit integer using modulo and division arithmetic, translating them into Turkish words with modular functions.
 * **`08_temperature_change.c`** : Example of a basic-level function involving internal temperature change.
 * **`09_math_library_essentials.c`** : Explores standard `<math.h>` operations including powers, roots, floating-point modulo (`fmod`), and rounding mechanics (`ceil`, `floor`, `round`, `trunc`).
-* **`09_advanced_math_and_floating_point.c`** : Deep dive into IEEE 754 floating-point diagnostics, NaN/Infinity detection (`isnan`, `isinf`, `isfinite`), safe comparisons, and `remainder` vs. `fmod` arithmetic.
+* **`10_advanced_math_and_floating_point.c`** : Deep dive into IEEE 754 floating-point diagnostics, NaN/Infinity detection (`isnan`, `isinf`, `isfinite`), safe comparisons, and `remainder` vs. `fmod` arithmetic.
