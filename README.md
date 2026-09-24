@@ -4,7 +4,7 @@ This repository contains C programming code examples, core memory concepts, data
 
 > ⚠️ **Note:** The code in this repository represents my ongoing learning journey. The primary goal is to master procedural programming, memory management in C, and build a solid engineering foundation.
 
----
+--- 
 
 ## 📁 Repository Structure
 
