@@ -17,3 +17,4 @@ This folder contains my practice implementations and technical exercises focused
 * **`09_math_library_essentials.c`** : Explores standard `<math.h>` operations including powers, roots, floating-point modulo (`fmod`), and rounding mechanics (`ceil`, `floor`, `round`, `trunc`).
 * **`10_advanced_math_and_floating_point.c`** : Deep dive into IEEE 754 floating-point diagnostics, NaN/Infinity detection (`isnan`, `isinf`, `isfinite`), safe comparisons, and `remainder` vs. `fmod` arithmetic.
 * **`11_random_number_guessing.c`** : This code implements a basic random number guessing game. The player attempts to guess a number between 1 and 100.
+* **`12_getchar_putchar_mechanics.c`** : Deep dive into character-level stream I/O (`getchar`, `putchar`), the `int` return type rationale for `EOF`, line-buffering behavior, and low-overhead stream processing.
