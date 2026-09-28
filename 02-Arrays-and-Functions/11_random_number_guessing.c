@@ -20,7 +20,7 @@
  *    - 'time(NULL)' fonksiyonu (<time.h>), 1 Ocak 1970'ten (Unix Epoch) bu yana geçen
  *      toplam saniyeyi döndürür. Zaman sürekli aktığı için her çalıştırmada farklı
  *      bir tohum elde edilir.
- *    - USTA KURALI: 'srand()' program boyunca SADECE BİR KEZ (tercihen 'main' girişinde)
+ *    - KURAL: 'srand()' program boyunca SADECE BİR KEZ (tercihen 'main' girişinde)
  *      çağrılır. Döngü içine yazılırsa aynı saniye içinde aynı sayılar üretilir.
  *
  * 3. ARALIK SINIRLANDIRMA MATEMATİĞİ (MODULO ARİTMETİĞİ):
