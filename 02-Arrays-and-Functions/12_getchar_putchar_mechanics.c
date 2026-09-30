@@ -93,7 +93,7 @@ void demo_stream_processing(void)
      * String tanımlayıp 'char str[100]' gibi belleği şişirmeden,
      * veriyi akıştan geldiği anda anlık işleyip ekrana basıyoruz:
      */
-    while ((ch = getchar()) != '\n' && ch != EOF)
+    while ((ch = getchar()) != '\n' && ch != EOF) // burada EOF kontrolü de yapıyoruz, çünkü kullanıcı Ctrl+D (Linux) veya Ctrl+Z (Windows) ile akışı kapatabilir. /n kontrolü ise ENTER tuşuna basıldığında döngüyü kırmak için.
     {
         // Küçük harf ise ASCII aritmetiğiyle büyük harfe dönüştür ('a' - 'A' = 32)
         if (ch >= 'a' && ch <= 'z')
