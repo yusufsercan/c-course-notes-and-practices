@@ -66,7 +66,7 @@ void demo_single_character(void)
     printf("[1] TEK KARAKTER OKUMA:\n");
     printf("Bir karakter yazip Enter'a basin: ");
 
-    ch = getchar();
+    ch = getchar(); //getch ile aynı mantıkta çalışır. Tek karakteri okur ve tampondan çeker. enter tuşuna basılana kadar bekler. enter tuşuna basıldığında '\n' karakteri de tamponda oluşur.
 
     printf("Girilen Karakter: '");
     putchar(ch);
