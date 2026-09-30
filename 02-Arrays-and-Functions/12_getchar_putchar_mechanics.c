@@ -69,7 +69,7 @@ void demo_single_character(void)
     ch = getchar(); //getch ile aynı mantıkta çalışır. Tek karakteri okur ve tampondan çeker. enter tuşuna basılana kadar bekler. enter tuşuna basıldığında '\n' karakteri de tamponda oluşur.
 
     printf("Girilen Karakter: '");
-    putchar(ch);
+    putchar(ch); // bu da printf("%c", ch); ile aynı mantıkta çalışır. Tek karakteri ekrana basar. ascıı kodunu da ekrana basmak için printf ile birlikte kullanıyoruz.
     printf("' | ASCII Kodu: %d\n", ch);
 
     /* 
