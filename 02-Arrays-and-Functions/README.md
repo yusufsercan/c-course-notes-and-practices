@@ -20,3 +20,4 @@ This folder contains my practice implementations and technical exercises focused
 * **`12_getchar_putchar_mechanics.c`** : Deep dive into character-level stream I/O (`getchar`, `putchar`), the `int` return type rationale for `EOF`, line-buffering behavior, and low-overhead stream processing.
 * **`13_character_classification_ctype.c`** : Demonstrates fundamental character classification and conversion tools (`isdigit`, `isalpha`, `isupper`, `tolower`) from `<ctype.h>`.
 * **`14_array_basics_and_traversal.c`** : Foundations of 1D arrays in C covering declaration, zero-initialization, array traversal, and average calculation.
+* **`15_array_input_output.c`** : Interactive array manipulation simulating random memory access, manual bounds checking against buffer overflows, and safe element-level read/write operations.
