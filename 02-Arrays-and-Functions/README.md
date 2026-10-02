@@ -22,3 +22,4 @@ This folder contains my practice implementations and technical exercises focused
 * **`14_array_basics_and_traversal.c`** : Foundations of 1D arrays in C covering declaration, zero-initialization, array traversal, and average calculation.
 * **`15_array_input_output.c`** : Interactive array manipulation simulating random memory access, manual bounds checking against buffer overflows, and safe element-level read/write operations.
 * **`16_array_frequency_dice_simulation.c`** : Demonstrates frequency counter arrays (histograms), zero-initialization importance, and direct-index mapping with a Monte Carlo dice roll simulation.
+* **`17_array_sorting_and_reversal.c`** : Implements an in-place Exchange Sort algorithm ($O(N^2)$), 3-step swap mechanics, and forward/reverse array traversal using modular function parameters.
