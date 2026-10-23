@@ -13,7 +13,7 @@ This repository contains C programming code examples, core memory concepts, data
 * **03-Pointers-and-Memory**: Memory addresses, pointer arithmetic, pass-by-reference, and dynamic memory allocation (`malloc`, `calloc`, `free`).
 * **04-Structures-and-Files:** `struct`, `union`, `typedef` declarations, and file handling operations (`fopen`, `fread`, `fwrite`).
   
-*Topics and folders will be expanded as I progress through my studies.*
+* Topics and folders will be expanded as I progress through my studies.*
 
 ---
 
