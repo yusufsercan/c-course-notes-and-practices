@@ -17,6 +17,19 @@ This repository contains C programming code examples, core memory concepts, data
 
 ---
 
+## 🛠️ Methodology & Study Workflow
+
+The C source code, algorithmic solutions, and theoretical notes across this repository originate directly from my university coursework, laboratory sessions, and structured technical self-study.
+
+To maintain high software engineering standards and establish deep low-level systems programming proficiency:
+
+* **Core Logic & Hands-on Implementation:** All procedural algorithms, pointer manipulations, memory management routines (`malloc`, `calloc`, `free`), data structure implementations, and lab exercises are written, tested, and debugged personally during active study sessions.
+* **AI-Assisted Code Review & Technical Documentation:** AI tooling is utilized as an engineering mentor and low-level code review companion—used to inspect memory safety (identifying potential buffer overflows, memory leaks, dangling pointers, and undefined behavior), verify strict compiler standard compliance (e.g., `-Wall -Wextra`), explain complex pointer arithmetic semantics, and format structured bilingual documentation.
+
+> In essence, AI serves as an architectural sounding board and static code reviewer; the manual memory management, pointer debugging, algorithmic logic, and problem-solving progression represent my personal academic effort.
+
+---
+
 ## 💻 Development Environment
 
 * **IDE:** Visual Studio Code
